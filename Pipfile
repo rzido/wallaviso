@@ -20,6 +20,7 @@ Flask-Cors = "*"
 "PyRSS2Gen" = "*"
 rfeed = "*"
 ipdb = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.6"
