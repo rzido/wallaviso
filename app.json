@@ -1,0 +1,32 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "description": "",
+  "env": {
+    "DOMAIN": "wallaviso.herokuapp.com",
+    "SECRET_KEY": {
+      "generator": "secret"
+    },
+    "DEBUG": "true",
+    "SQLALCHEMY_DATABASE_URI": "'sqlite:///database.sqlite'",
+    "MAIL_SERVER": "",
+    "MAIL_USERNAME": "",
+    "MAIL_PASSWORD": "",
+    "URL_API_POSTAL_CODE": "https://hidden-sierra-35586.herokuapp.com/"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "wallaviso",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
