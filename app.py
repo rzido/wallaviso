@@ -222,7 +222,7 @@ def login():
         # Validate email and password
         email = form.email.data
         my_user = User.query.filter_by(
-            email=email).filter_by(is_active=1).first()
+            email=email).filter_by(is_active=True).first()
         if not my_user:
             flash(
                 'No ha activado todavía su cuenta. Verifique su buzón.',
